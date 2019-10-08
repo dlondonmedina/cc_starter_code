@@ -36,27 +36,31 @@ def is_underage():
 
    #TODO:
    # Set up a conditional with four cases
-   # if the age is above 21, 
+   # if the age is equal to or above 21, 
    # print "You may drink, smoke, and drive if you wish!"
-   # if the age is above 18 but less than 21, 
+   # if the age is equal to or above 18 but less than 21, 
    # print "You may smoke and drive!"
-   # if the age is above 16 but less than 18,
+   # if the age is equal to or above 16 but less than 18,
    # print "You may drive!"
    # if the age is less than 16, 
    # print "Enjoy your bike, kid!"
-
+   pass
 
 def countdown():
    #TODO:
    # Use a loop to print a countdown from 10 to zero with
    # one number on each new line. If you do not use a loop
    # you will not get points for this problem.
+   pass
 
-
-def guessing_game():
-   # This is a guessing game. I have setup the necessary 
-   # code to generate a random integer between 0 and 10 inclusive
-   # you should give your user at most 10 guesses to guess
+def guessing_game(num):
+   # This is a guessing game. I have set up a parameter that will be
+   # a random integer that your user will have to try to guess.
+   # To use num in your condition, you should write something like
+   # 
+   # if user_input == num: 
+   #    
+   # You should give your user at most 10 guesses to guess
    # the number. If the guess is too high or too low, you should tell 
    # them "Too High!" or "Too Low!" with the print statement.
    # If they guess the number, you should tell them "You win!"
@@ -65,3 +69,4 @@ def guessing_game():
    # if the user enters that the program should exit, saying 
    # "Goodbye, quitter!"
    # No, it's not a very nice program. 
+   pass

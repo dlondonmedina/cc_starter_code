@@ -7,7 +7,7 @@ def is_even():
    # TODO: 
    # Create a conditional that sets out to True if the user enters
    # an even integer and False if the user enters an odd integer.
-
+    
    # This is for the test.
    return out 
 
@@ -23,8 +23,7 @@ def multi_condition():
    # if the value is positive and even, print "Even Steven!"
    # if the value is negative and odd or even, print "Negative Nelly!"
    # remember, with multiple conditions you can use if, elif, elif, else
-
-
+   
    return None
 
 
@@ -32,7 +31,6 @@ def is_underage():
    #TODO:
    # Prompt the user for their age and store it to a variable. Don't
    # forget to convert the input to an integer.
-
 
    #TODO:
    # Set up a conditional with four cases
@@ -44,14 +42,18 @@ def is_underage():
    # print "You may drive!"
    # if the age is less than 16, 
    # print "Enjoy your bike, kid!"
-   pass
+   
+   # So the tests fail and they don't throw errors
+   return None
 
 def countdown():
    #TODO:
    # Use a loop to print a countdown from 10 to zero with
    # one number on each new line. If you do not use a loop
    # you will not get points for this problem.
-   pass
+
+   # So the tests fail and they don't throw errors
+   return None
 
 def guessing_game(num):
    # This is a guessing game. I have set up a parameter that will be
@@ -69,4 +71,7 @@ def guessing_game(num):
    # if the user enters that the program should exit, saying 
    # "Goodbye, quitter!"
    # No, it's not a very nice program. 
-   pass
+
+
+   # So the tests fail and they don't throw errors
+   return None

@@ -88,6 +88,13 @@ class TestLab4(unittest.TestCase):
             output = fake_out.getvalue().strip('\n')
       self.assertEqual(output, expected_output)
    
+   def test_countdown(self):
+      expected_output = ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0']
+      with patch('sys.stdout', new = StringIO()) as fake:
+         target.countdown()
+         output = fake.getvalue().rstrip('\n').split('\n')
+      self.assertEqual(output, expected_output)
+
    def test_guessing_game_q(self):
       user_input = ["q"]
       expected_output = "Goodbye, quitter!"
@@ -110,19 +117,19 @@ class TestLab4(unittest.TestCase):
       user_input = [0, 10, 1, 9, 2, 8, 3, 7, 4, 6]
       expected_output = [
          "Too Low!",
-         "Too High",
+         "Too High!",
          "Too Low!",
-         "Too High",
+         "Too High!",
          "Too Low!",
-         "Too High",
+         "Too High!",
          "Too Low!",
-         "Too High",
+         "Too High!",
          "Too Low!",
-         "Too High",
+         "Too High!",
          "You Lose!"
       ]
       with patch('builtins.input', side_effect=user_input):
          with patch('sys.stdout', new = StringIO()) as fake:
             target.guessing_game(5)
-            output = fake.getvalue().strip('\n')
+            output = fake.getvalue().rstrip('\n').split('\n')
       self.assertEqual(output, expected_output)

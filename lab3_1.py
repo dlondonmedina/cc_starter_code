@@ -37,7 +37,7 @@ def greeter_bot():
 def temp_calculator():
 
    # TODO: Write code that prompts the user for a temperature in degrees
-   # celsius and prints the equivalent temperature in degrees fahrenheit.
+   # fahrenheit and prints the equivalent temperature in degrees celsius.
    # The formula is C = (F - 32) * (5/9). 
    print()
 

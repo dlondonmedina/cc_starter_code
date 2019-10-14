@@ -24,8 +24,8 @@ class TestLab3(unittest.TestCase):
       self.assertEqual(output, expected_output)
 
    def test_calculator(self):
-      user_input = [91.625]
-      expected_output = 33.125
+      user_input = [32]
+      expected_output = 0
       with patch('builtins.input', side_effect=user_input):
          with patch('sys.stdout', new = StringIO()) as fake_out:
             target.temp_calculator()

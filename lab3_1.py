@@ -34,6 +34,7 @@ def greeter_bot():
    fname = input()
    print()
 
+
 def temp_calculator():
 
    # TODO: Write code that prompts the user for a temperature in degrees

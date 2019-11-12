@@ -8,16 +8,11 @@
 # TODO: Build a URL verification function. You may use any name that 
 # you like for the function as I will not be testing it with 
 # unittests. This function should take a string as a parameter.
-# It must test 3 things.
-# 1. The string must begin with http:// or https://. If it does not
-# the function should add those to the beginning of the string.
-# 2. The string must end with one of the following four top level 
+# It must test:
+# 1. The string must end with one of the following four top level 
 # domains: .com, .net, .edu, .gov. This means checking the last three
-# characters. If this test fails, the function should return None
-# 3. The string must contain no spaces. If it does, the function 
-# should return None.  
-# If #'s 2 and 3 are okay, and you added http:// or https:// if 
-# necessary, this function should return a string of the URL.
+# characters. If this test fails, the function should return None  
+# If the url is okay, then this function should return a string of the URL.
 
 # TODO: Create a function called basic_request() that takes a url as a 
 # string as a parameter.

@@ -4,10 +4,10 @@ import lab7_1 as target
 class TestLab7(unittest.TestCase):
    
    def setUp(self):
-      self.good_url ='https://127.0.0.1:5000'
-      self.bad_url = 'www.dylanmedina.com'
+      self.good_url ='https://computingconcepts.herokuapp.com'
+      self.bad_url = 'https://www.dylanmedina.com'
       self.unfixible_url = 'www.dylanmedina.horse'
-      self.good_data = {'username': 'Bobby', 'email': 'bobby@bobby.com'}
+      self.good_data = {'username': 'bobby', 'email': 'bobby@bobby.com'}
 
    def test_basic_request_bad_url_can_not_be_fixed(self):
       self.assertIsNone(target.basic_request(self.unfixible_url))
@@ -28,10 +28,10 @@ class TestLab7(unittest.TestCase):
       self.assertEqual("44260953", target.request_user_agent(self.good_url, 'DICE'))
    
    def test_requests_post_bad_url(self):
-      self.assertIsNone(target_request_post(self.unfixible_url, self.good_data))
+      self.assertIsNone(target.request_post(self.unfixible_url, self.good_data))
    
    def test_requests_post_bad_data(self):
-      self.assertIsNone(target_request_post(self.good_url, None))
+      self.assertIsNone(target.request_post(self.good_url, None))
    
    def test_requests_post_works(self):
       self.assertEqual("44261853", target.request_post(self.good_url, self.good_data))
